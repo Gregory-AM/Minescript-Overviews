@@ -51,7 +51,7 @@ There are several entries that include this, but you are looking for the entry t
 
 Inside your code, you can reference this as:
 ```
-Minecraft = JavaClass("net.minecraft.client")
+Minecraft = JavaClass("net.minecraft.client.Minecraft")
 ```
 
 From here, you can access the `GetInstance` method in order to create a class of it.
@@ -77,7 +77,7 @@ If you still require using Pyjinn files inside of a Python project, you can do s
 
 Using the above code to make a snippet:
 ```
-Minecraft = JavaClass("net.minecraft.client")
+Minecraft = JavaClass("net.minecraft.client.Minecraft")
 mc = Minecraft.getInstance()
 ```
 
@@ -99,7 +99,7 @@ You access these methods ingame using the Mojang mappings, similar to before:
 Putting it all together:
 
 ```
-Minecraft = JavaClass("net.minecraft.client")
+Minecraft = JavaClass("net.minecraft.client.Minecraft")
 mc = Minecraft.getInstance()
 
 Player = mc.Player
