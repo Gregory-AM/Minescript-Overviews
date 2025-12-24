@@ -46,6 +46,16 @@ mc = Minecraft.getInstance()
 
 For many classes in Java, you must first create an instance of it before interacting. In this case, we do so with `Minecraft`.
 
+## Pyjinn vs Java module
+
+For time-sensitive applications, pyjinn will always be significantly better.
+
+There is a delay in scripting when passing these objects between `Python -> Java -> Python -> Java` on seperate threads that will significantly slow your code down with .py files.
+
+Pyjinn files don't have this issue because they're compiled into java and run natively, going from above to `Java -> Java -> Java -> Java` which is comparitively instant.
+
+If you still require using Pyjinn files inside of a Python project, you can do so with embedded scripts, but I do not reccommend this for beginners.
+
 ## Tutorial: Set Velocity of player
 
 **!!! This snippet uses code that will get you banned by anticheat on multiplayer servers. USE THIS AS AN EXAMPLE IN YOUR OWN SINGLEPLAYER WORLD !!!**
