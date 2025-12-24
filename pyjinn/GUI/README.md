@@ -67,11 +67,11 @@ You can edit these widgets using methods from the `abstractWidget` class.
 
 `https://mappings.dev/1.21.10/net/minecraft/client/gui/components/AbstractWidget.html`
 
-The following code will cause the chat cursor to be placed to the right in the "Chat" screen.
+The following code will remove the guidebook button from the crafting screen.
 ```
 # inside after_init() 
 
-if "Chat" in screen_name():
+if "Crafting" in screen_name():
     btn = screen.children()[0]
     btn.setX(50)
 ```
