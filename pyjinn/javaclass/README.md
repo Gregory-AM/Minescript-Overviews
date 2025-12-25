@@ -49,7 +49,7 @@ Under the mapping page for your version, `https://mappings.dev/1.21.10/index.htm
 
 There are several entries that include this, but you are looking for the entry that is specifically `net.minecraft.client`.
 
-Inside your code, you can reference this as:
+Inside your code, you can reference the `Minecraft` class inside of here as follows:
 ```
 Minecraft = JavaClass("net.minecraft.client.Minecraft")
 ```
